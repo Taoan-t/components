@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #343a40;
+  line-height: 1;
+  background: #f8f9fa;
+}
+
+.accordion {
+  width: 700px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 32px 24px;
+  background: #fff;
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+.open {
+  border-top: 4px solid #087f5b;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: 500;
+  color: #ced4da;
+}
+
+.text {
+  font-size: 24px;
+  font-weight: 500px;
+}
+
+.open .number,
+.open .text {
+  color: #087f5b;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #087f5b;
+}
+
+.hidden-box {
+  grid-column: 2/3;
+  display: none;
+}
+
+.open .hidden-box {
+  display: block;
+}
+
+.hidden-box p {
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+ul {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  color: #868e96;
+}
